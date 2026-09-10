@@ -3,35 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TypeFreeが提供するアプリとサービスのご案内。">
+  <meta http-equiv="refresh" content="0; url=/apps/amenige/">
   <meta name="theme-color" content="#075fa8">
-  <title>TypeFree</title>
+  <title>アメニゲ | TypeFree</title>
   <link rel="icon" href="/assets/amenige-icon.png">
-  <link rel="apple-touch-icon" href="/assets/amenige-icon.png">
-  <link rel="stylesheet" href="/assets/style.css">
+  <script>
+    (() => {
+      const destination = new URL('/apps/amenige/', window.location.origin);
+      const current = new URL(window.location.href);
+      if (current.searchParams.get('lang') === 'en') destination.searchParams.set('lang', 'en');
+      window.location.replace(destination);
+    })();
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="/">TypeFree</a>
-  </header>
-  <main>
-    <section class="hero compact">
-      <p class="eyebrow">TYPEFREE APPS</p>
-      <h1>暮らしの判断を、<br>わかりやすく。</h1>
-      <p class="lead">必要な情報を迷わず確認できる、シンプルなアプリを開発しています。</p>
-    </section>
-    <section class="section">
-      <h2>アプリ</h2>
-      <a class="app-card" href="/apps/vehicle-flood/">
-        <img class="app-symbol" src="/assets/amenige-icon.png" alt="" width="72" height="72">
-        <span>
-          <strong>アメニゲ</strong>
-          <small>線状降水帯・大雨から愛車を守る</small>
-        </span>
-        <span class="arrow" aria-hidden="true">›</span>
-      </a>
-    </section>
-  </main>
-  <footer>© TypeFree</footer>
+  <p><a href="/apps/amenige/">アメニゲの紹介ページへ</a></p>
 </body>
 </html>
