@@ -3,51 +3,140 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="線状降水帯や大雨の情報から、地下・低地の駐車場にある車両の早めの退避判断を支援するiPhoneアプリです。">
-  <title>車両水害アラート | TypeFree</title>
+  <meta name="theme-color" content="#075fa8">
+  <meta name="description" content="アメニゲは、線状降水帯や大雨から愛車を守るため、車を動かすタイミングの判断を支援する日本国内向けiPhoneアプリです。">
+  <title>アメニゲ | 線状降水帯・大雨から愛車を守る</title>
+  <link rel="icon" href="/assets/amenige-icon.png">
+  <link rel="apple-touch-icon" href="/assets/amenige-icon.png">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
-<body>
+<body class="amenige-page">
   <header class="site-header">
     <a class="brand" href="/">TypeFree</a>
-    <nav aria-label="アプリ情報">
+    <nav aria-label="アメニゲの情報">
+      <a href="#features">できること</a>
+      <a href="#safety">安全について</a>
       <a href="/apps/vehicle-flood/support/">サポート</a>
     </nav>
   </header>
+
   <main>
-    <section class="hero">
-      <p class="eyebrow">iPhone APP</p>
-      <h1>車を動かせるうちに、<br>判断するために。</h1>
-      <p class="lead">線状降水帯や大雨の公式情報を、車両の退避判断に必要な形で確認できる防災アプリです。</p>
-      <p class="availability">日本国内向け · For use in Japan</p>
-      <p class="small">iOSの言語が日本語の場合は日本語、それ以外の場合は英語で表示します。気象庁の公式地域名や原文は日本語で表示される場合があります。</p>
-      <p class="small" lang="en">The app is intended for locations in Japan. It appears in Japanese when iOS uses Japanese, and in English for other languages. Official JMA area names and source text may remain in Japanese.</p>
-      <p class="availability">App Store公開準備中</p>
+    <section class="amenige-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FOR IPHONE · JAPAN</p>
+        <div class="app-name-lockup">
+          <img src="/assets/amenige-icon.png" alt="" width="72" height="72">
+          <span>アメニゲ</span>
+        </div>
+        <h1>雨が強くなる前に、<br>愛車を動かす目安を。</h1>
+        <p class="hero-subtitle">線状降水帯・大雨から愛車を守る</p>
+        <p class="lead">登録した駐車場所や現在地周辺について、気象庁の公式情報をひとつに整理。まだ安全に動ける段階で、車を移動するか考えるためのアプリです。</p>
+        <div class="hero-badges" aria-label="対応情報">
+          <span>線状降水帯</span>
+          <span>予想雨量</span>
+          <span>警報・注意報</span>
+        </div>
+        <p class="availability availability-strong">App Store公開準備中</p>
+      </div>
+
+      <div class="hero-visual" aria-label="アメニゲのアプリアイコン">
+        <div class="weather-orbit weather-orbit-rain">大雨</div>
+        <img class="hero-app-icon" src="/assets/amenige-icon.png" alt="雨と浸水から車が明るい方向へ移動するアメニゲのアイコン" width="512" height="512">
+        <div class="weather-orbit weather-orbit-safe">早めの判断</div>
+      </div>
     </section>
 
-    <section class="section feature-grid">
+    <section class="question-band" aria-labelledby="questions-title">
+      <div>
+        <p class="eyebrow">AT A GLANCE</p>
+        <h2 id="questions-title">ひらいたら、3つを確認。</h2>
+      </div>
+      <ol>
+        <li><span>1</span><strong>線状降水帯の可能性</strong><small>登録地域が対象か</small></li>
+        <li><span>2</span><strong>危険になりそうな時間</strong><small>いつ頃の予測か</small></li>
+        <li><span>3</span><strong>車を動かす目安</strong><small>いま何を考える段階か</small></li>
+      </ol>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT IT DOES</p>
+        <h2>大雨の情報を、行動につながる形に。</h2>
+        <p>天気を詳しく見るためではなく、駐車中の車をいつ動かすか考えるために必要な情報へ絞っています。</p>
+      </div>
+      <div class="feature-grid feature-grid-cards">
+        <article>
+          <span class="feature-icon" aria-hidden="true">雨</span>
+          <h3>早い段階から確認</h3>
+          <p>線状降水帯が発生してからではなく、半日程度前からの発生可能性情報を重視します。</p>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">時</span>
+          <h3>雨量と警報を補助に</h3>
+          <p>予想最大1時間雨量と、大雨・洪水の警報や注意報を合わせて確認できます。</p>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">車</span>
+          <h3>5段階のわかりやすい目安</h3>
+          <p>通常から重大な危険まで、状況と推奨する備えをLevel 0〜4で表示します。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section location-section">
+      <div class="location-copy">
+        <p class="eyebrow">TWO LOCATIONS</p>
+        <h2>駐車場所も、いまいる場所も。</h2>
+        <p>登録した駐車場所と現在地周辺を切り替えて確認できます。ウィジェットでも対象を切り替えられ、許可されている場合は手動更新時に現在地を取得します。</p>
+        <p class="small">現在地は継続的に追跡しません。位置を取得できない場合、ウィジェットはアプリで最後に確認した地域を使用します。</p>
+      </div>
+      <div class="location-card" aria-label="登録地点と現在地の表示例">
+        <div class="location-tabs"><span class="active">登録地点</span><span>現在地周辺</span></div>
+        <div class="location-status">
+          <span class="status-dot"></span>
+          <div><small>車を動かす目安</small><strong>Level 0 · 通常</strong></div>
+        </div>
+        <div class="location-row"><span>線状降水帯</span><strong>予測・発生情報なし</strong></div>
+        <div class="location-row"><span>最大1時間雨量</span><strong>—</strong></div>
+        <div class="location-row"><span>大雨・洪水情報</span><strong>発表なし</strong></div>
+        <p>線状降水帯がなくても、局地的な大雨や浸水は起こり得ます。</p>
+      </div>
+    </section>
+
+    <section class="section trust-grid">
       <article>
-        <span class="number">01</span>
-        <h2>早期情報を確認</h2>
-        <p>登録地域の線状降水帯発生可能性を中心に、危険が迫る前の情報を確認します。</p>
+        <p class="eyebrow">OFFICIAL DATA</p>
+        <h2>気象庁の公開情報を使用</h2>
+        <p>防災情報XMLなどの機械可読な一次情報をiPhoneから直接取得し、端末内で解析します。</p>
       </article>
       <article>
-        <span class="number">02</span>
-        <h2>判断材料をひとつに</h2>
-        <p>予想雨量や大雨警報・注意報など、車両退避を考えるための補助情報をまとめます。</p>
+        <p class="eyebrow">ON DEVICE</p>
+        <h2>登録情報は端末内に</h2>
+        <p>駐車場所、最後に取得した現在地、履歴などをTypeFreeのサーバーへ送信・保管しません。</p>
       </article>
       <article>
-        <span class="number">03</span>
-        <h2>ひと目でわかる</h2>
-        <p>現在のレベルと推奨される備えを、アプリとウィジェットで簡潔に表示します。</p>
+        <p class="eyebrow">JAPAN ONLY</p>
+        <h2>日本国内向け</h2>
+        <p>日本の駐車場所と気象情報を対象とし、日本語以外のiOSでは英語で表示します。</p>
       </article>
     </section>
 
-    <section class="section notice">
-      <h2>安全のために</h2>
-      <p>本アプリは公的機関による避難情報ではなく、車両退避の判断を支援するものです。危険が迫っている場合は車両よりもご自身と周囲の方の安全を優先し、気象庁や自治体の最新情報に従ってください。</p>
+    <section class="section safety-panel" id="safety">
+      <div class="safety-mark" aria-hidden="true">!</div>
+      <div>
+        <p class="eyebrow">SAFETY FIRST</p>
+        <h2>危険が迫っているときは、人の安全を最優先に。</h2>
+        <p>アメニゲは公的機関による避難情報ではなく、車を動かす判断を支援する非公式アプリです。道路冠水や強い雨が始まっている場合は、車を取りに行かないでください。気象庁・自治体の最新情報と現地の状況を確認してください。</p>
+      </div>
+    </section>
+
+    <section class="section english-summary" lang="en">
+      <p class="eyebrow">ENGLISH</p>
+      <h2>Amenige helps you decide when to move your car before severe rain.</h2>
+      <p>Designed for locations in Japan, it brings together official JMA linear rainband information, forecast rainfall, warnings and advisories. The interface appears in English when iOS uses a language other than Japanese.</p>
     </section>
   </main>
+
   <footer>
     <a href="/apps/vehicle-flood/privacy/">プライバシーポリシー</a>
     <a href="/apps/vehicle-flood/support/">サポート</a>
